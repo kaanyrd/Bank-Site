@@ -1,0 +1,37 @@
+/* GOOGLE FONTS */
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600&family=Tilt+Prism&display=swap");
+
+/* GENERAL VALUES */
+:root {
+  /* FOR COLORS */
+  --green-light: #5ec576;
+  --green-dark: #4bbb7d;
+  --yellow-light: #ffcb03;
+  --yello-dark: #ffbb00;
+  --light-red: #ff585f;
+  --dark-red: #fd424b;
+  --gradient-for-green: linear-gradient(to top left, #39b385, #9be15d);
+  --gradient-for-yellow: linear-gradient(to top left, #ffb003, #ffcb03);
+  /* TRANSITIONS */
+  --transitio-linear: all 0.3s linear;
+  --transition-e-in-out: all 0.3s ease-in-out;
+  /* PADDING DESIGN */
+  --section-padding: 5rem 0;
+}
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.5;
+  /* letter-spacing: 1px; */
+}
+img {
+  width: 100%;
+  display: block;
+}
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}

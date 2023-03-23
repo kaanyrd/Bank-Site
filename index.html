@@ -19,38 +19,51 @@
     <title>Bank Site</title>
   </head>
   <!-- JS -->
-  <script src="JS/app.js"></script>
+  <script defer src="JS/app.js"></script>
   <body>
+    <!-- NAVBAR -->
     <nav class="navbar">
       <div class="navbar-center">
         <div class="logo-container">
-          <img src="IMGs/ICON.png" alt="LOGO" />
+          <img class="logo-img" src="IMGs/ICON.png" alt="LOGO" />
         </div>
-        <ul class="nav-links">
-          <li>
-            <a class="nav-link" href="">features</a>
-          </li>
-          <li>
-            <a class="nav-link" href="">operations</a>
-          </li>
-          <li>
-            <a class="nav-link" href="">testimonials</a>
-          </li>
-          <li>
-            <a class="register-btn" href="">open account</a>
-          </li>
-        </ul>
-        <span class="navbar-icon">
+        <div class="nav-self">
+          <span id="close-btn" class="close-btn">
+            <i class="fa-solid fa-xmark"></i>
+          </span>
+          <ul class="nav-links">
+            <li>
+              <a class="nav-link" href="">features</a>
+            </li>
+            <li>
+              <a class="nav-link" href="">operations</a>
+            </li>
+            <li>
+              <a class="nav-link" href="">testimonials</a>
+            </li>
+            <li>
+              <a class="register-btn" href="">open account</a>
+            </li>
+          </ul>
+        </div>
+        <span id="navbar-btn" class="navbar-icon">
           <i class="fa-solid fa-bars"></i>
         </span>
       </div>
     </nav>
+    <!-- END OF NAVBAR -->
+    <!-- BANNER -->
     <section class="banner">
       <div class="banner-center">
         <div class="banner-info">
-          <h1>When banking meets minimalist</h1>
-          <h5>A simpler banking experience for a simpler life.</h5>
-          <a class="learn-more-btn" href="">learn more</a>
+          <h1 class="banner-info-main-title">When banking meets minimalist</h1>
+          <h4 class="banner-info-second-title">
+            A simpler banking experience for a simpler life...
+          </h4>
+          <span class="learn-more-btn">
+            <a href="">learn more</a>
+            <i class="fa-solid fa-arrow-down"></i>
+          </span>
         </div>
         <div class="banner-img">
           <div class="banner-img-left">
@@ -62,9 +75,12 @@
         </div>
       </div>
     </section>
-    <section class="section">
+    <!-- END OF BANNER -->
+    <hr />
+    <!-- FEATURES -->
+    <section class="section section-1">
       <div class="section-information">
-        <h5 class="section-title-top">features</h5>
+        <h3 class="section-title-top">features</h3>
         <h2 class="section-title-bottom">
           Everything you need in a modern bank and more.
         </h2>
@@ -72,59 +88,80 @@
       <div class="section-center">
         <article class="card card-1">
           <div class="card-img-container">
-            <img src="IMGs/digital bank.jpg" alt="DIGITAL BANK" />
+            <img
+              class="card-img"
+              src="IMGs/digital bank.jpg"
+              alt="DIGITAL BANK"
+            />
           </div>
           <div class="card-information-side">
             <span class="info-icon">
-              <i></i>
+              <i class="fa-solid fa-computer"></i>
             </span>
-            <h3 class="card-info-title">100% digital bank</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Et
-              eligendi temporibus odit suscipit iste? Perspiciatis cupiditate
-              saepe voluptatum quisquam praesentium.
-            </p>
+            <div class="card-text-side">
+              <h3 class="card-info-title">100% digital bank</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Et
+                eligendi temporibus odit suscipit iste? Perspiciatis cupiditate
+                saepe voluptatum quisquam praesentium.
+              </p>
+            </div>
           </div>
         </article>
         <article class="card card-2">
           <div class="card-img-container">
-            <img src="IMGs/FEED YOUR MONEY.jpg" alt="FEED MONEY" />
+            <img
+              class="card-img"
+              src="IMGs/FEED YOUR MONEY.jpg"
+              alt="FEED MONEY"
+            />
           </div>
           <div class="card-information-side">
             <span class="info-icon">
-              <i></i>
+              <i class="fa-solid fa-chart-line"></i>
             </span>
-            <h3 class="card-info-title">watch your money grow</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Et
-              eligendi temporibus odit suscipit iste? Perspiciatis cupiditate
-              saepe voluptatum quisquam praesentium.
-            </p>
+            <div class="card-text-side">
+              <h3 class="card-info-title">watch your money grow</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Et
+                eligendi temporibus odit suscipit iste? Perspiciatis cupiditate
+                saepe voluptatum quisquam praesentium.
+              </p>
+            </div>
           </div>
         </article>
         <article class="card card-3">
           <div class="card-img-container">
-            <img src="IMGs/credit card 3.jpg" alt="CREDIT CARD" />
+            <img
+              class="card-img"
+              src="IMGs/credit card 3.jpg"
+              alt="CREDIT CARD"
+            />
           </div>
           <div class="card-information-side">
             <span class="info-icon">
-              <i></i>
+              <i class="fa-solid fa-credit-card"></i>
             </span>
-            <h3 class="card-info-title">free debit card included</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Et
-              eligendi temporibus odit suscipit iste? Perspiciatis cupiditate
-              saepe voluptatum quisquam praesentium.
-            </p>
+            <div class="card-text-side">
+              <h3 class="card-info-title">free debit card included</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Et
+                eligendi temporibus odit suscipit iste? Perspiciatis cupiditate
+                saepe voluptatum quisquam praesentium.
+              </p>
+            </div>
           </div>
         </article>
       </div>
     </section>
-    <section class="section">
+    <!-- END OF FEATURES -->
+    <hr />
+    <!-- OPERATIONS -->
+    <section class="section section-2">
       <div class="section-information">
-        <h5 class="section-title-top">features</h5>
+        <h3 class="section-title-top">operations</h3>
         <h2 class="section-title-bottom">
-          Everything you need in a modern bank and more.
+          everything as simple as possible, but no simpler.
         </h2>
       </div>
       <div class="section-center">
@@ -132,20 +169,20 @@
           <div class="slider-btns">
             <button class="slider-btn yellow">
               <strong>01</strong>
-              instant transfers
+              <p>instant transfers</p>
             </button>
             <button class="slider-btn green">
               <strong>02</strong>
-              instant loans
+              <p>instant loans</p>
             </button>
             <button class="slider-btn red">
               <strong>03</strong>
-              instant closing
+              <p>instant closing</p>
             </button>
           </div>
           <article class="slide slide-1">
             <span class="slide-left-side">
-              <i class="fa-solid fa-money-bill-transfer"></i>
+              <i id="money" class="fa-solid fa-money-bill-transfer"></i>
             </span>
             <div class="slide-right-side">
               <h2 class="slide-main-title">
@@ -159,9 +196,9 @@
               </p>
             </div>
           </article>
-          <article class="slide slide-2">
+          <article class="slide slide-2 slide-hidden">
             <span class="slide-left-side">
-              <i class="fa-solid fa-house"></i>
+              <i id="home" class="fa-solid fa-house"></i>
             </span>
             <div class="slide-right-side">
               <h2 class="slide-main-title">
@@ -171,13 +208,16 @@
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
                 enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
+                nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit
+                amet consectetur adipisicing elit. Soluta blanditiis numquam
+                eaque vitae! Modi ullam delectus distinctio maiores repellendus
+                iure!
               </p>
             </div>
           </article>
-          <article class="slide slide-3">
+          <article class="slide slide-3 slide-hidden">
             <span class="slide-left-side">
-              <i class="fa-solid fa-user"></i>
+              <i id="user" class="fa-solid fa-user"></i>
             </span>
             <div class="slide-right-side">
               <h2 class="slide-main-title">
@@ -194,17 +234,26 @@
         </div>
       </div>
     </section>
+    <!-- END OF OPERATIONS -->
+    <hr />
+    <!-- PROFILES -->
     <section class="section">
       <div class="section-information">
-        <h5 class="section-title-top">features</h5>
+        <h3 class="section-title-top">not sure yet?</h3>
         <h2 class="section-title-bottom">
-          Everything you need in a modern bank and more.
+          millions of bankists are already making their lifes simpler.
         </h2>
       </div>
-      <div class="section-center">
+      <div class="slider-center">
         <div class="profile-slider">
-          <button class="btn-left">left</button>
-          <button class="btn-right">right</button>
+          <button class="btn-left">
+            <i class="fa-solid fa-arrow-left-long"></i>
+          </button>
+          <!-- <button class="btn-left">&larr;</button> -->
+          <!-- <button class="btn-right">&rarr;</button> -->
+          <button class="btn-right">
+            <i class="fa-solid fa-arrow-right-long"></i>
+          </button>
           <article class="profile profile-1">
             <div class="profile-text">
               <h2 class="profile-text-title">best financial decision ever!</h2>
@@ -219,17 +268,17 @@
             </div>
             <div class="profile-about">
               <div class="profile-small-img-container">
-                <img src="IMGs/profil3.jpg" alt="pp" />
+                <img class="profile-img" src="IMGs/profil3.jpg" alt="pp" />
               </div>
               <div class="profile-about-text">
                 <h3 class="profile-name">aarav lyyn</h3>
-                <p class="profile-loaction">
-                  san francisco, <strong>usa</strong>
+                <p class="profile-location">
+                  san francisco,<strong> USA</strong>
                 </p>
               </div>
             </div>
           </article>
-          <article class="profile profile-2">
+          <!-- <article class="profile profile-2">
             <div class="profile-text">
               <h2 class="profile-text-title">
                 the last step to becoming a complete minimalist
@@ -245,15 +294,15 @@
             </div>
             <div class="profile-about">
               <div class="profile-small-img-container">
-                <img src="IMGs/profil2.jpg" alt="pp" />
+                <img class="profile-img" src="IMGs/profil2.jpg" alt="pp" />
               </div>
               <div class="profile-about-text">
                 <h3 class="profile-name">miyah miles</h3>
-                <p class="profile-loaction">london, <strong>uk</strong></p>
+                <p class="profile-location">london, <strong> UK</strong></p>
               </div>
             </div>
-          </article>
-          <article class="profile profile-3">
+          </article> -->
+          <!-- <article class="profile profile-3">
             <div class="profile-text">
               <h2 class="profile-text-title">
                 finally free from old-school banks
@@ -269,22 +318,24 @@
             </div>
             <div class="profile-about">
               <div class="profile-small-img-container">
-                <img src="IMGs/profil1.jpg" alt="pp" />
+                <img class="profile-img" src="IMGs/profil1.jpg" alt="pp" />
               </div>
               <div class="profile-about-text">
                 <h3 class="profile-name">lara larin</h3>
-                <p class="profile-loaction">moscow,<strong>russia</strong></p>
+                <p class="profile-location">moscow,<strong> RUSSIA</strong></p>
               </div>
             </div>
-          </article>
+          </article> -->
           <div class="dots">
-            <div class="dot dot-1">.</div>
-            <div class="dot dot-2">.</div>
-            <div class="dot dot-3">.</div>
+            <div class="dot dot-1"></div>
+            <div class="dot dot-2"></div>
+            <div class="dot dot-3"></div>
           </div>
         </div>
       </div>
     </section>
+    <!-- END OF PROFILES -->
+    <!-- FOOTER -->
     <footer class="footer">
       <div class="footer-center">
         <div class="footer-top-side">
@@ -292,8 +343,9 @@
             the best day to join bankist was one year ago. the second best is
             toady!
           </h1>
-          <a class="footer-join-btn" href="">open your free account today!</a>
+          <a class="register-btn" href="">open your free account today!</a>
         </div>
+        <div class="footer-divider"></div>
         <div class="footer-bottom-side">
           <ul class="footer-links">
             <li>
@@ -318,16 +370,21 @@
               <a class="footer-link" href="">contact us</a>
             </li>
           </ul>
-          <div class="footer-img">
-            <img src="IMGs/bank-footer-icon-2.png" alt="FOOTER IMG" />
+          <div class="footer-img-container">
+            <img
+              class="footer-img"
+              src="IMGs/bank-footer-icon-2.png"
+              alt="FOOTER IMG"
+            />
           </div>
           <p class="footer-copyright">
             &#169; copyright by my udemy instructor. i designed as a prototype
-            to learning js as much as possbile on project. i dont claim as my
-            product. i developed a similar project.
+            to learning javascript as much as possbile on project. i dont claim
+            as my product. i developed a similar project.
           </p>
         </div>
       </div>
     </footer>
+    <!-- END OF FOOTER -->
   </body>
 </html>

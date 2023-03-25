@@ -1,12 +1,13 @@
 "use strict";
 
-const navBtn = document.querySelector("#navbar-btn");
-const closeBtn = document.querySelector("#close-btn");
-let navbar = document.querySelector(".nav-self");
+const navbarBtn = document.getElementById("navbar-btn");
+const closeBtn = document.getElementById("close-btn");
+const asideBar = document.getElementById("aside");
 
-navBtn.addEventListener("click", () => {
-  navbar.classList.add("show-nav");
+navbarBtn.addEventListener("click", () => {
+  asideBar.classList.add("show-aside");
 });
+
 closeBtn.addEventListener("click", () => {
-  navbar.classList.remove("show-nav");
+  asideBar.classList.remove("show-aside");
 });

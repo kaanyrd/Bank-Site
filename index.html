@@ -21,32 +21,50 @@
   <!-- JS -->
   <script defer src="JS/app.js"></script>
   <body>
+    <!-- ASIDE -->
+    <aside id="aside" class="aside">
+      <div class="aside-center">
+        <span id="close-btn" class="close-btn">
+          <i class="fa-solid fa-xmark"></i>
+        </span>
+        <ul class="aside-links">
+          <li>
+            <a class="aside-link" href="">features</a>
+          </li>
+          <li>
+            <a class="aside-link" href="">operations</a>
+          </li>
+          <li>
+            <a class="aside-link" href="">testimonials</a>
+          </li>
+          <li>
+            <a class="aside-register-btn" href="">open account</a>
+          </li>
+        </ul>
+      </div>
+    </aside>
+    <!-- END OF ASIDE -->
     <!-- NAVBAR -->
     <nav class="navbar">
       <div class="navbar-center">
-        <div class="logo-container">
-          <img class="logo-img" src="IMGs/ICON.png" alt="LOGO" />
+        <div class="navbar-logo-container">
+          <img class="navbar-logo" src="IMGs/ICON.png" alt="NAVLOGO" />
         </div>
-        <div class="nav-self">
-          <span id="close-btn" class="close-btn">
-            <i class="fa-solid fa-xmark"></i>
-          </span>
-          <ul class="nav-links">
-            <li>
-              <a class="nav-link" href="">features</a>
-            </li>
-            <li>
-              <a class="nav-link" href="">operations</a>
-            </li>
-            <li>
-              <a class="nav-link" href="">testimonials</a>
-            </li>
-            <li>
-              <a class="register-btn" href="">open account</a>
-            </li>
-          </ul>
-        </div>
-        <span id="navbar-btn" class="navbar-icon">
+        <ul class="navbar-links">
+          <li>
+            <a class="navbar-link" href="">features</a>
+          </li>
+          <li>
+            <a class="navbar-link" href="">operations</a>
+          </li>
+          <li>
+            <a class="navbar-link" href="">testimonials</a>
+          </li>
+          <li>
+            <a class="navbar-register-btn" href="">open account</a>
+          </li>
+        </ul>
+        <span id="navbar-btn" class="navbar-btn">
           <i class="fa-solid fa-bars"></i>
         </span>
       </div>
@@ -67,11 +85,19 @@
         </div>
         <div class="banner-img">
           <div class="banner-img-left">
-            <img src="IMGs/main money.jpg" alt="MONEY" />
+            <img
+              class="banner-self-img-left"
+              src="IMGs/main.jfif"
+              alt="MONEY"
+            />
           </div>
-          <div class="banner-img-right">
-            <img src="IMGs/main.jfif" alt="BANK" />
-          </div>
+          <!-- <div class="banner-img-right">
+            <img
+              class="banner-self-img-right"
+              src="IMGs/main.jfif"
+              alt="BANK"
+            />
+          </div> -->
         </div>
       </div>
     </section>
@@ -343,7 +369,9 @@
             the best day to join bankist was one year ago. the second best is
             toady!
           </h1>
-          <a class="register-btn" href="">open your free account today!</a>
+          <a class="aside-register-btn" href=""
+            >open your free account today!</a
+          >
         </div>
         <div class="footer-divider"></div>
         <div class="footer-bottom-side">

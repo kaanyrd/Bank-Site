@@ -404,13 +404,18 @@ a {
   border-radius: 50%;
 }
 .profile-text-title {
+  color: #272727;
   font-size: 1.3rem;
   text-transform: uppercase;
   margin-bottom: 0.5rem;
 }
 .profile-text-information {
+  color: #272727;
   margin-bottom: 0.5rem;
   font-size: 0.85rem;
+}
+.profile-about-text {
+  color: #272727;
 }
 .profile-about {
   display: flex;
@@ -544,6 +549,18 @@ a {
   .slider-btn {
     column-gap: 0.6rem;
   }
+  .profile-text-title {
+    font-size: 2rem;
+  }
+  .profile-text-information {
+    font-size: 1.1rem;
+  }
+  .profile-name {
+    font-size: 1.3rem;
+  }
+  .profile-location {
+    font-size: 1.2rem;
+  }
 }
 @media screen and (min-width: 968px) {
   .navbar-links {
@@ -582,6 +599,9 @@ a {
     column-gap: 2rem;
     flex-direction: column-reverse;
   }
+  .profile {
+    min-height: 20rem;
+  }
 }
 @media screen and (min-width: 1170px) {
   .banner-info-main-title {
@@ -612,6 +632,18 @@ a {
     transform: rotateY(360deg);
   }
 }
+@keyframes swipeLeft {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-10px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
 /* END OF ANIMATIONS */
 
 /* SWIPERJS CSS */
@@ -632,7 +664,7 @@ a {
 }
 
 .swiper-slide:nth-child(1n) {
-  background-color: #d4d3d3;
+  background-color: #dedddd;
   color: black;
   padding: 0.5rem;
 }
@@ -644,4 +676,13 @@ a {
 } */
 .profile-overflow {
   overflow-x: hidden;
+}
+.swipe-left {
+  text-align: center;
+  color: var(--green-dark);
+  text-transform: uppercase;
+  margin-top: 2rem;
+  animation-name: swipeLeft;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
 }

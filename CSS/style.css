@@ -261,6 +261,9 @@ a {
 }
 /* END OF FEATURES */
 /* OPERATIONS */
+.operations-section {
+  padding: 4rem 0;
+}
 .section-2 {
   background-color: var(--main-bgc-color);
 }

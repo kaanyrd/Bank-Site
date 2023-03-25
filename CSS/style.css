@@ -130,7 +130,7 @@ a {
 }
 .navbar-logo {
   height: 100%;
-  object-fit: contain;
+  /* object-fit: contain; */
 }
 .navbar-btn {
   cursor: pointer;

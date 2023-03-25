@@ -299,6 +299,7 @@ a {
   gap: 0.5rem;
 }
 .slider-btn {
+  color: var(--main-text-color);
   cursor: pointer;
   padding: 0.5rem;
   font-size: 1.2rem;
@@ -411,7 +412,7 @@ a {
 }
 .profile-text-information {
   margin-bottom: 0.5rem;
-  font-size: 0.7rem;
+  font-size: 0.85rem;
 }
 .profile-about {
   display: flex;

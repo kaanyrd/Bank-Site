@@ -11,3 +11,9 @@ navbarBtn.addEventListener("click", () => {
 closeBtn.addEventListener("click", () => {
   asideBar.classList.remove("show-aside");
 });
+
+// SWIPER JS
+var swiper = new Swiper(".mySwiper", {
+  effect: "cards",
+  grabCursor: true,
+});

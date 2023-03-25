@@ -16,9 +16,15 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- SWIPERJS CSS -->
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+/>
     <title>Bank Site</title>
   </head>
   <!-- JS -->
+  <script defer src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
   <script defer src="JS/app.js"></script>
   <body>
     <!-- ASIDE -->
@@ -116,7 +122,7 @@
           <div class="card-img-container">
             <img
               class="card-img"
-              src="IMGs/digital bank.jpg"
+              src="IMGs/digital bank-low-quality.jpg"
               alt="DIGITAL BANK"
             />
           </div>
@@ -138,7 +144,7 @@
           <div class="card-img-container">
             <img
               class="card-img"
-              src="IMGs/FEED YOUR MONEY.jpg"
+              src="IMGs/FEED YOUR MONEY-low-quality.jpg"
               alt="FEED MONEY"
             />
           </div>
@@ -160,7 +166,7 @@
           <div class="card-img-container">
             <img
               class="card-img"
-              src="IMGs/credit card 3.jpg"
+              src="IMGs/credit card 3-low-quality.jpg"
               alt="CREDIT CARD"
             />
           </div>
@@ -263,7 +269,7 @@
     <!-- END OF OPERATIONS -->
     <hr />
     <!-- PROFILES -->
-    <section class="section">
+    <section class="profile-section profile-overflow">
       <div class="section-information">
         <h3 class="section-title-top">not sure yet?</h3>
         <h2 class="section-title-bottom">
@@ -271,92 +277,96 @@
         </h2>
       </div>
       <div class="slider-center">
-        <div class="profile-slider">
-          <button class="btn-left">
-            <i class="fa-solid fa-arrow-left-long"></i>
-          </button>
-          <!-- <button class="btn-left">&larr;</button> -->
-          <!-- <button class="btn-right">&rarr;</button> -->
-          <button class="btn-right">
-            <i class="fa-solid fa-arrow-right-long"></i>
-          </button>
-          <article class="profile profile-1">
-            <div class="profile-text">
-              <h2 class="profile-text-title">best financial decision ever!</h2>
-              <p class="profile-text-information">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Accusantium quas quisquam non? Quas voluptate nulla minima
-                deleniti optio ullam nesciunt, numquam corporis et asperiores
-                laboriosam sunt, praesentium suscipit blanditiis. Necessitatibus
-                id alias reiciendis, perferendis facere pariatur dolore veniam
-                autem esse non voluptatem saepe provident nihil molestiae.
-              </p>
+
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <article class="profile profile-1">
+                <div class="profile-text">
+                  <h2 class="profile-text-title">best financial decision ever!</h2>
+                  <p class="profile-text-information">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Accusantium quas quisquam non? Quas voluptate nulla minima
+                    deleniti optio ullam nesciunt, numquam corporis et asperiores
+                    laboriosam sunt, praesentium suscipit blanditiis. Necessitatibus
+                    id alias reiciendis, perferendis facere pariatur dolore veniam
+                    autem esse non voluptatem saepe provident nihil molestiae.
+                  </p>
+                </div>
+                <div class="profile-about">
+                  <div class="profile-small-img-container">
+                    <img class="profile-img" src="IMGs/profil3.jpg" alt="pp" />
+                  </div>
+                  <div class="profile-about-text">
+                    <h3 class="profile-name">aarav lyyn</h3>
+                    <p class="profile-location">
+                      san francisco,<strong> USA</strong>
+                    </p>
+                  </div>
+                </div>
+              </article>
             </div>
-            <div class="profile-about">
-              <div class="profile-small-img-container">
-                <img class="profile-img" src="IMGs/profil3.jpg" alt="pp" />
-              </div>
-              <div class="profile-about-text">
-                <h3 class="profile-name">aarav lyyn</h3>
-                <p class="profile-location">
-                  san francisco,<strong> USA</strong>
-                </p>
-              </div>
+            <div class="swiper-slide">
+              <article class="profile profile-2">
+                <div class="profile-text">
+                  <h2 class="profile-text-title">
+                    the last step to becoming a complete minimalist
+                  </h2>
+                  <p class="profile-text-information">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Accusantium quas quisquam non? Quas voluptate nulla minima
+                    deleniti optio ullam nesciunt, numquam corporis et asperiores
+                    laboriosam sunt, praesentium suscipit blanditiis. Necessitatibus
+                    id alias reiciendis, perferendis facere pariatur dolore veniam
+                    autem esse non voluptatem saepe provident nihil molestiae.
+                  </p>
+                </div>
+                <div class="profile-about">
+                  <div class="profile-small-img-container">
+                    <img class="profile-img" src="IMGs/profil2.jpg" alt="pp" />
+                  </div>
+                  <div class="profile-about-text">
+                    <h3 class="profile-name">miyah miles</h3>
+                    <p class="profile-location">london, <strong> UK</strong></p>
+                  </div>
+                </div>
+              </article>
             </div>
-          </article>
-          <!-- <article class="profile profile-2">
-            <div class="profile-text">
-              <h2 class="profile-text-title">
-                the last step to becoming a complete minimalist
-              </h2>
-              <p class="profile-text-information">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Accusantium quas quisquam non? Quas voluptate nulla minima
-                deleniti optio ullam nesciunt, numquam corporis et asperiores
-                laboriosam sunt, praesentium suscipit blanditiis. Necessitatibus
-                id alias reiciendis, perferendis facere pariatur dolore veniam
-                autem esse non voluptatem saepe provident nihil molestiae.
-              </p>
+            <div class="swiper-slide">
+              <article class="profile profile-3">
+                <div class="profile-text">
+                  <h2 class="profile-text-title">
+                    finally free from old-school banks
+                  </h2>
+                  <p class="profile-text-information">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Accusantium quas quisquam non? Quas voluptate nulla minima
+                    deleniti optio ullam nesciunt, numquam corporis et asperiores
+                    laboriosam sunt, praesentium suscipit blanditiis. Necessitatibus
+                    id alias reiciendis, perferendis facere pariatur dolore veniam
+                    autem esse non voluptatem saepe provident nihil molestiae.
+                  </p>
+                </div>
+                <div class="profile-about">
+                  <div class="profile-small-img-container">
+                    <img class="profile-img" src="IMGs/profil1.jpg" alt="pp" />
+                  </div>
+                  <div class="profile-about-text">
+                    <h3 class="profile-name">lara larin</h3>
+                    <p class="profile-location">moscow,<strong> RUSSIA</strong></p>
+                  </div>
+                </div>
+              </article>
             </div>
-            <div class="profile-about">
-              <div class="profile-small-img-container">
-                <img class="profile-img" src="IMGs/profil2.jpg" alt="pp" />
-              </div>
-              <div class="profile-about-text">
-                <h3 class="profile-name">miyah miles</h3>
-                <p class="profile-location">london, <strong> UK</strong></p>
-              </div>
-            </div>
-          </article> -->
-          <!-- <article class="profile profile-3">
-            <div class="profile-text">
-              <h2 class="profile-text-title">
-                finally free from old-school banks
-              </h2>
-              <p class="profile-text-information">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Accusantium quas quisquam non? Quas voluptate nulla minima
-                deleniti optio ullam nesciunt, numquam corporis et asperiores
-                laboriosam sunt, praesentium suscipit blanditiis. Necessitatibus
-                id alias reiciendis, perferendis facere pariatur dolore veniam
-                autem esse non voluptatem saepe provident nihil molestiae.
-              </p>
-            </div>
-            <div class="profile-about">
-              <div class="profile-small-img-container">
-                <img class="profile-img" src="IMGs/profil1.jpg" alt="pp" />
-              </div>
-              <div class="profile-about-text">
-                <h3 class="profile-name">lara larin</h3>
-                <p class="profile-location">moscow,<strong> RUSSIA</strong></p>
-              </div>
-            </div>
-          </article> -->
-          <div class="dots">
-            <div class="dot dot-1"></div>
-            <div class="dot dot-2"></div>
-            <div class="dot dot-3"></div>
           </div>
+        </div>
+
+
+
+
+          
+         
+          
         </div>
       </div>
     </section>

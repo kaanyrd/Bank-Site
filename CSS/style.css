@@ -172,6 +172,8 @@ a {
 }
 .learn-more-btn {
   /* border: 3px solid black; */
+  width: fit-content;
+  margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -441,7 +443,7 @@ a {
 }
 .footer-center {
   max-width: 1170px;
-  width: 60vw;
+  width: 80vw;
   margin: 0 auto;
   text-align: center;
   padding: 5rem 0;
@@ -493,8 +495,150 @@ a {
   margin: 1rem 0;
 }
 /* END OF FOOTER */
+/* SWIPERJS CSS */
+.swiper {
+  width: 80%;
+  height: fit-content;
+}
+
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 18px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
+  border: 2px dashed black;
+}
+
+.swiper-slide:nth-child(1n) {
+  padding: 1rem;
+  background: rgba(242, 241, 241, 0.9);
+}
+.swiper-slide:nth-child(2n) {
+}
+
+.swiper-slide:nth-child(3n) {
+}
+.profile-overflow {
+  overflow-x: hidden;
+}
+.swipe-left {
+  text-align: center;
+  color: var(--green-dark);
+  text-transform: uppercase;
+  margin-top: 2rem;
+  animation-name: swipeLeft;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+/* END OF SWIPER */
+/* SIGNUP */
+.signUp {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0 auto;
+  background-color: #e0e0e0;
+  z-index: 1000;
+  /* border: 2px solid black; */
+  border: none;
+  border-radius: 10px;
+  padding: 1.5rem;
+  max-width: 40rem;
+  width: 90vw;
+  /* height: auto; */
+}
+.signUp > * {
+  /* border: 3px solid red; */
+}
+.signUp-bgc {
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+.signUp-close-btn {
+  position: absolute;
+  right: 0.7rem;
+  top: 0.2rem;
+  font-size: 2rem;
+  border-radius: 5px;
+  color: #018250;
+  cursor: pointer;
+  display: inline-block;
+  transition: var(--transitio-linear);
+}
+.signUp-close-btn:hover {
+  color: red;
+}
+.signUp-title {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  text-align: center;
+  color: #018250;
+}
+.signUp-title-underline {
+  width: 90%;
+  margin: 0 auto 2.5rem auto;
+  height: 2px;
+  background-color: #018250;
+}
+.form-label {
+  text-transform: capitalize;
+  font-weight: bolder;
+  display: flex;
+  justify-content: center;
+}
+.form-input {
+  width: 100%;
+  border-radius: 5px;
+  border: none;
+  padding-left: 0.3rem;
+}
+.account-register {
+  /* margin-top: 0.5rem; */
+  margin: 0.5rem auto 0 auto;
+  padding: 0.5rem 1rem;
+  width: fit-content;
+  border-radius: 5px;
+  text-align: center;
+  text-transform: capitalize;
+  background-color: var(--green-dark);
+}
+.account-register > a {
+  color: white;
+  font-weight: bolder;
+}
+
+/* END OF SIGNUP */
 
 /* MEDIA QUARIES */
+@media screen and (min-width: 600px) {
+  .form-part {
+    /* border: 3px solid black; */
+    display: grid;
+    grid-template-columns: 170px 1fr;
+    column-gap: 1.5rem;
+  }
+  .form-part > * {
+    /* border: 3px solid red; */
+  }
+  .signForm {
+    margin: 1.5rem auto;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+  }
+  .form-part {
+    padding-right: 1.5rem;
+  }
+}
 @media screen and (min-width: 768px) {
   .aside {
     display: none;
@@ -560,6 +704,9 @@ a {
   }
   .profile-location {
     font-size: 1.2rem;
+  }
+  .swiper {
+    width: 60%;
   }
 }
 @media screen and (min-width: 968px) {
@@ -645,44 +792,7 @@ a {
 }
 
 /* END OF ANIMATIONS */
-
-/* SWIPERJS CSS */
-.swiper {
-  width: 80%;
-  height: fit-content;
-}
-
-.swiper-slide {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 18px;
-  font-size: 22px;
-  font-weight: bold;
-  color: #fff;
-  border: 2px dashed black;
-}
-
-.swiper-slide:nth-child(1n) {
-  background-color: #dedddd;
-  color: black;
-  padding: 0.5rem;
-}
-
-/* .swiper-slide:nth-child(2n) {
-}
-
-.swiper-slide:nth-child(3n) {
-} */
-.profile-overflow {
-  overflow-x: hidden;
-}
-.swipe-left {
-  text-align: center;
-  color: var(--green-dark);
-  text-transform: uppercase;
-  margin-top: 2rem;
-  animation-name: swipeLeft;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
+/* HIDDEN CLASS */
+.hidden {
+  display: none;
 }

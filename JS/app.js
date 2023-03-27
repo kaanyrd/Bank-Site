@@ -8,6 +8,7 @@ const signUpCloseBtn = document.getElementById("signUp-close-btn");
 const signUpSide = document.getElementById("signUp");
 const blur = document.querySelector("#signUp-blur");
 const moreBtn = document.querySelector(".learn-more-btn");
+const navbar = document.getElementById("navbar");
 
 // NAVBAR
 navbarBtn.addEventListener("click", () => {
@@ -83,13 +84,36 @@ barLink.forEach((barlink) => {
 const btnsContainer = document.querySelectorAll(".slider-btns");
 const tabContainer = document.querySelector(".slider-system");
 const btnSelf = document.querySelectorAll(".slider-btn");
+const slides = document.querySelectorAll(".slide");
 
 tabContainer.addEventListener("click", (e) => {
   const clickedButton = e.target.closest(".slider-btn");
-  console.log(clickedButton);
+  // console.log(clickedButton);
   if (!clickedButton) return;
   btnSelf.forEach((btnS) => {
     btnS.classList.remove("active-slider-btn");
   });
   clickedButton.classList.add("active-slider-btn");
+
+  // let id = clickedButton.dataset.tab;
+  slides.forEach((slide) => {
+    slide.classList.remove("slide-active");
+  });
+  document
+    .querySelector(`.slide-${clickedButton.dataset.tab}`)
+    .classList.add("slide-active");
+});
+
+// STICKY NAVBAR
+window.addEventListener("scroll", () => {
+  if (window.pageYOffset > 80) {
+    navbar.classList.add("sticky-navbar");
+  } else {
+    navbar.classList.remove("sticky-navbar");
+  }
+});
+// DENEME KISMI
+window.addEventListener("beforeunload", (e) => {
+  e.preventDefault();
+  e.returnValue = "Siteden ayrılma sağlansın mı ?";
 });

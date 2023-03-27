@@ -128,7 +128,7 @@ a {
   /* opacity: 1; */
 }
 .navbar-center {
-  max-width: 1370px;
+  max-width: 1570px;
   width: 90vw;
   margin: 0 auto;
   display: flex;
@@ -172,7 +172,7 @@ a {
 }
 .banner-center {
   /* border: 3px solid red; */
-  max-width: 1370px;
+  max-width: 1570px;
   width: 90vw;
   margin: 0 auto;
   z-index: 0;
@@ -223,13 +223,13 @@ a {
   background-color: #fff;
 }
 .section-center {
-  max-width: 1370px;
+  max-width: 1570px;
   width: 90vw;
   margin: 0 auto;
 }
 .section-information {
   /* border: 3px solid black; */
-  max-width: 1370px;
+  max-width: 1570px;
   width: 90vw;
   margin: 0 auto;
   text-align: center;
@@ -397,6 +397,9 @@ a {
 
 .slider-center {
   display: flex;
+  /* max-width: 1570px;
+  width: 90vw;
+  margin: 0 auto; */
 }
 
 .profile {
@@ -455,7 +458,7 @@ a {
   color: white;
 }
 .footer-center {
-  max-width: 1370px;
+  max-width: 1570px;
   width: 80vw;
   margin: 0 auto;
   text-align: center;
@@ -516,6 +519,7 @@ a {
 /* SWIPERJS CSS */
 .swiper {
   width: 80%;
+  max-width: 1170px;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;

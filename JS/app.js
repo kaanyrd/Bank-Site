@@ -86,7 +86,7 @@ const btnSelf = document.querySelectorAll(".slider-btn");
 
 tabContainer.addEventListener("click", (e) => {
   const clickedButton = e.target.closest(".slider-btn");
-  console.log(clickedButton);
+  // console.log(clickedButton);
   if (!clickedButton) return;
   btnSelf.forEach((btnS) => {
     btnS.classList.remove("active-slider-btn");

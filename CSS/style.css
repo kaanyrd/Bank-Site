@@ -128,7 +128,7 @@ a {
   /* opacity: 1; */
 }
 .navbar-center {
-  max-width: 1170px;
+  max-width: 1370px;
   width: 90vw;
   margin: 0 auto;
   display: flex;
@@ -172,7 +172,7 @@ a {
 }
 .banner-center {
   /* border: 3px solid red; */
-  max-width: 1500px;
+  max-width: 1370px;
   width: 90vw;
   margin: 0 auto;
   z-index: 0;
@@ -217,19 +217,19 @@ a {
 /* FEATURES */
 .section {
   min-height: 100vh;
-  padding: 4rem 0;
+  padding: 6rem 0;
 }
 .section-1 {
   background-color: #fff;
 }
 .section-center {
-  max-width: 1170px;
+  max-width: 1370px;
   width: 90vw;
   margin: 0 auto;
 }
 .section-information {
   /* border: 3px solid black; */
-  max-width: 1170px;
+  max-width: 1370px;
   width: 90vw;
   margin: 0 auto;
   text-align: center;
@@ -287,7 +287,7 @@ a {
 /* END OF FEATURES */
 /* OPERATIONS */
 .operations-section {
-  padding: 5rem 0;
+  padding: 6rem 0;
 }
 .section-2 {
   background-color: var(--main-bgc-color);
@@ -392,7 +392,7 @@ a {
 /* END OF OPERATIONS */
 /* PROFILE */
 .profile-section {
-  padding: 5rem 0;
+  padding: 6rem 0;
 }
 
 .slider-center {
@@ -455,7 +455,7 @@ a {
   color: white;
 }
 .footer-center {
-  max-width: 1170px;
+  max-width: 1370px;
   width: 80vw;
   margin: 0 auto;
   text-align: center;
@@ -573,8 +573,8 @@ a {
 #signUp.open {
   -webkit-animation-name: signOpen;
   animation-name: signOpen;
-  -webkit-animation-duration: 0.4s;
-  animation-duration: 0.4s;
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
   z-index: 1000;
@@ -582,8 +582,8 @@ a {
 #signUp.close {
   -webkit-animation-name: signClose;
   animation-name: signClose;
-  -webkit-animation-duration: 0.4s;
-  animation-duration: 0.4s;
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
 }

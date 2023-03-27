@@ -112,8 +112,26 @@ window.addEventListener("scroll", () => {
     navbar.classList.remove("sticky-navbar");
   }
 });
-// DENEME KISMI
-window.addEventListener("beforeunload", (e) => {
-  e.preventDefault();
-  e.returnValue = "Siteden ayrılma sağlansın mı ?";
+
+// LAZY IMAGES
+const imagesToLoad = document.querySelectorAll(".card-img[data-src]");
+
+const loadImgFunc = function (e, observer) {
+  const entry = e[0];
+  if (!entry.isIntersecting) return;
+  entry.target.src = entry.target.dataset.src;
+  entry.target.addEventListener("load", function () {
+    entry.target.classList.remove("lazy-img");
+  });
+  observer.unobserve(entry.target);
+};
+
+const imgObserver = new IntersectionObserver(loadImgFunc, {
+  root: null,
+  threshold: 0.5,
+  // rootMargin: "",
+});
+
+imagesToLoad.forEach((img) => {
+  imgObserver.observe(img);
 });

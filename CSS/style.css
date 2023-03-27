@@ -516,14 +516,12 @@ a {
   padding: 1rem;
   background: rgba(242, 241, 241, 0.9);
 }
-.swiper-slide:nth-child(2n) {
+/* .swiper-slide:nth-child(2n) {
 }
 
 .swiper-slide:nth-child(3n) {
-}
-.profile-overflow {
-  overflow-x: hidden;
-}
+} */
+
 .swipe-left {
   text-align: center;
   color: var(--green-dark);
@@ -535,11 +533,11 @@ a {
 }
 /* END OF SWIPER */
 /* SIGNUP */
-.signUp {
+#signUp {
   position: fixed;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%) scale(0);
   margin: 0 auto;
   background-color: #e0e0e0;
   z-index: 1000;
@@ -549,19 +547,30 @@ a {
   padding: 1.5rem;
   max-width: 40rem;
   width: 90vw;
-  /* height: auto; */
 }
-.signUp > * {
-  /* border: 3px solid red; */
+#signUp.open {
+  animation-name: signOpen;
+  animation-duration: 0.4s;
+  animation-fill-mode: forwards;
+  z-index: 1000;
 }
-.signUp-bgc {
-  z-index: 100;
+#signUp.close {
+  animation-name: signClose;
+  animation-duration: 0.4s;
+  animation-fill-mode: forwards;
+}
+/* FIXME */
+.blur {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+  z-index: 100;
+}
+.signUp > * {
+  /* border: 3px solid red; */
 }
 .signUp-close-btn {
   position: absolute;
@@ -615,7 +624,6 @@ a {
   color: white;
   font-weight: bolder;
 }
-
 /* END OF SIGNUP */
 
 /* MEDIA QUARIES */
@@ -790,9 +798,46 @@ a {
     transform: translateX(0px);
   }
 }
+@keyframes signOpen {
+  0% {
+    transform: translate(-50%, -50%) scale(0);
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1.2);
+  }
+  /* 70% {
+    transform: translate(-50%, -50%) scale(0.95);
+  }
+  95% {
+    transform: translate(-50%, -50%) scale(1.1);
+  } */
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+@keyframes signClose {
+  100% {
+    transform: translate(-50%, -50%) scale(0);
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1.2);
+  }
+  /* 30% {
+    transform: translate(-50%, -50%) scale(0.95);
+  }
+  5% {
+    transform: translate(-50%, -50%) scale(1.1);
+  } */
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
 
 /* END OF ANIMATIONS */
 /* HIDDEN CLASS */
 .hidden {
   display: none;
+}
+.profile-overflow {
+  overflow-x: hidden;
 }

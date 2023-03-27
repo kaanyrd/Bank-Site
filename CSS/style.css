@@ -292,9 +292,10 @@ a {
   overflow-y: auto;
   margin-bottom: 0.5rem;
   text-align: center;
-}
-.slide-hidden {
   display: none;
+}
+.slide-active {
+  display: block;
 }
 .slider-btns {
   position: absolute;
@@ -318,8 +319,10 @@ a {
   display: flex;
   align-items: center;
 }
+.active-slider-btn {
+  transform: translateY(-10px);
+}
 .slider-btn:hover {
-  transform: scale(1.1);
 }
 .slide-main-title {
   text-transform: capitalize;
@@ -332,19 +335,19 @@ a {
   background-color: var(--yellow-light);
 }
 .yellow:hover {
-  background-color: var(--yello-dark);
+  background-color: #ffa200;
 }
 .green {
   background-color: var(--green-light);
 }
 .green:hover {
-  background-color: var(--green-dark);
+  background-color: #00b16d;
 }
 .red {
   background-color: var(--light-red);
 }
 .red:hover {
-  background-color: var(--dark-red);
+  background-color: orangered;
 }
 .slide-left-side {
   display: inline-block;
@@ -575,7 +578,10 @@ a {
   height: 100%;
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
+  background: rgba(0, 0, 0, 0.5);
   z-index: 100;
+  opacity: 1;
+  transition: all 0.4s linear;
 }
 .signUp-close-btn {
   position: absolute;
@@ -906,7 +912,8 @@ a {
 /* END OF ANIMATIONS */
 /* HIDDEN CLASS */
 .hidden {
-  display: none;
+  visibility: hidden;
+  opacity: 0;
 }
 .profile-overflow {
   overflow-x: hidden;

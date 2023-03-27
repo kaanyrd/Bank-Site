@@ -35,13 +35,13 @@
         </span>
         <ul class="aside-links">
           <li>
-            <a class="aside-link" href="">features</a>
+            <a class="aside-link" href="#section-1">features</a>
           </li>
           <li>
-            <a class="aside-link" href="">operations</a>
+            <a class="aside-link" href="#section-2">operations</a>
           </li>
           <li>
-            <a class="aside-link" href="">testimonials</a>
+            <a class="aside-link" href="#section-3">testimonials</a>
           </li>
           <li class="register-btn aside-register-btn" >
             <a href="#">open account</a>
@@ -58,13 +58,13 @@
         </div>
         <ul class="navbar-links">
           <li>
-            <a class="navbar-link" href="">features</a>
+            <a class="navbar-link" href="#section-1">features</a>
           </li>
           <li>
-            <a class="navbar-link" href="">operations</a>
+            <a class="navbar-link" href="#section-2">operations</a>
           </li>
           <li>
-            <a class="navbar-link" href="">testimonials</a>
+            <a class="navbar-link" href="#section-3">testimonials</a>
           </li>
           <li class="register-btn">
             <a  class="navbar-register-btn" href="#">open account</a>
@@ -108,7 +108,7 @@
       </div>
     </section>
     <!-- END OF BANNER -->
-    <hr />
+    <!-- <hr /> -->
     <!-- FEATURES -->
     <section class="section section-1" id="section-1">
       <div class="section-information">
@@ -187,9 +187,9 @@
       </div>
     </section>
     <!-- END OF FEATURES -->
-    <hr />
+    <!-- <hr /> -->
     <!-- OPERATIONS -->
-    <section class="operations-section section-2">
+    <section class="operations-section section-2" id="section-2">
       <div class="section-information">
         <h3 class="section-title-top">operations</h3>
         <h2 class="section-title-bottom">
@@ -199,20 +199,20 @@
       <div class="section-center">
         <div class="slider-system">
           <div class="slider-btns">
-            <button class="slider-btn yellow">
+            <button class="slider-btn yellow active-slider-btn" data-tab="1">
               <strong>01</strong>
               <p>instant transfers</p>
             </button>
-            <button class="slider-btn green">
+            <button class="slider-btn green" data-tab="2">
               <strong>02</strong>
               <p>instant loans</p>
             </button>
-            <button class="slider-btn red">
+            <button class="slider-btn red" data-tab="3">
               <strong>03</strong>
               <p>instant closing</p>
             </button>
           </div>
-          <article class="slide slide-1">
+          <article class="slide slide-1 slide-active">
             <span class="slide-left-side">
               <i id="money" class="fa-solid fa-money-bill-transfer"></i>
             </span>
@@ -228,7 +228,7 @@
               </p>
             </div>
           </article>
-          <article class="slide slide-2 slide-hidden">
+          <article class="slide slide-2">
             <span class="slide-left-side">
               <i id="home" class="fa-solid fa-house"></i>
             </span>
@@ -247,7 +247,7 @@
               </p>
             </div>
           </article>
-          <article class="slide slide-3 slide-hidden">
+          <article class="slide slide-3">
             <span class="slide-left-side">
               <i id="user" class="fa-solid fa-user"></i>
             </span>
@@ -267,9 +267,9 @@
       </div>
     </section>
     <!-- END OF OPERATIONS -->
-    <hr />
+    <!-- <hr /> -->
     <!-- PROFILES -->
-    <section class="profile-section profile-overflow">
+    <section class="profile-section profile-overflow" id="section-3">
       <div class="section-information">
         <h3 class="section-title-top">not sure yet?</h3>
         <h2 class="section-title-bottom">
@@ -445,7 +445,7 @@
       </div>
     <!-- END OF SIGNUP -->
     <!-- SCREEN BLUR -->
-      <div id="signUp-blur" class="hidden"></div>
+      <div id="signUp-blur" class="blur hidden"></div>
     <!-- END OF SCREEN BLUR -->
   </body>
 </html>

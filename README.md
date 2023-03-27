@@ -1,5 +1,5 @@
 # Bank-Site
-## I develope a BANK SITE with HTML / CSS / JS (JQuery) as responsive. Wish like it and dont forget to use some events in site...
+## I develope a BANK SITE with HTML / CSS / JS as responsive. Wish like it and dont forget to use (buttons) some events in site...
 # For Netlify Link:
 ## https://bank-site-kaanyrd.netlify.app
 # PC VIEW

@@ -491,14 +491,6 @@ a {
   border: 3px solid white;
 }
 .footer-img-container {
-  -webkit-animation-name: footerIcon;
-  animation-name: footerIcon;
-  -webkit-animation-duration: 5s;
-  animation-duration: 5s;
-  -webkit-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear;
-  animation-timing-function: linear;
   height: 5rem;
   margin: 2rem 0;
   z-index: -1;
@@ -795,6 +787,16 @@ a {
   }
   .profile {
     min-height: 20rem;
+  }
+  .footer-img-container {
+    -webkit-animation-name: footerIcon;
+    animation-name: footerIcon;
+    -webkit-animation-duration: 5s;
+    animation-duration: 5s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
   }
 }
 @media screen and (min-width: 1170px) {

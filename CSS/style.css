@@ -463,7 +463,7 @@ a {
   width: 80vw;
   margin: 0 auto;
   text-align: center;
-  padding: 5rem 0;
+  padding: 5rem 0 1rem 0;
 }
 .footer-title {
   text-transform: uppercase;
